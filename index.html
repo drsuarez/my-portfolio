@@ -5,142 +5,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daniel Suarez | DevOps & Full Stack Engineer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        :root {
-            --bg: #0f172a;
-            --accent: #6366f1;
-            --text: #f8fafc;
-            --glass: rgba(255, 255, 255, 0.05);
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--bg);
-            color: var(--text);
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-
-        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
-
-        header { text-align: center; padding: 60px 0; }
-        h1 { font-size: 2.5rem; margin-bottom: 10px; }
-        .tagline { color: var(--accent); font-weight: bold; font-size: 1.2rem; }
-
-        section { margin-bottom: 50px; }
-        h2 { border-left: 4px solid var(--accent); padding-left: 15px; margin-bottom: 25px; }
-
-        /* Experience Timeline */
-        .timeline-item {
-            background: var(--glass);
-            border: 1px solid rgba(255,255,255,0.1);
-            padding: 20px;
-            border-radius: 12px;
-            margin-bottom: 15px;
-        }
-        .date { font-size: 0.85rem; color: var(--accent); font-weight: bold; }
-        .role { font-weight: bold; font-size: 1.1rem; }
-        .company { opacity: 0.8; margin-bottom: 10px; display: block; }
-
-        /* Skills Grid */
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 15px;
-        }
-        .skill-tag {
-            background: rgba(99, 102, 241, 0.1);
-            border: 1px solid var(--accent);
-            padding: 8px;
-            text-align: center;
-            border-radius: 6px;
-            font-size: 0.9rem;
-        }
-
-        .btn {
-            display: inline-block;
-            background: var(--accent);
-            color: white;
-            padding: 12px 25px;
-            border-radius: 8px;
-            text-decoration: none;
-            margin-top: 20px;
-        }
-
-        footer { text-align: center; padding: 40px; opacity: 0.5; font-size: 0.9rem; }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="container">
     <header>
         <h1>Daniel R. Suarez</h1>
-        <p class="tagline">DevOps Engineer & Full Stack Java Developer</p>
-        <div style="margin-top: 15px;">
-            <a href="https://www.linkedin.com/in/daniel-suarez-a2339a68/" style="color:white; margin:0 10px; font-size: 1.5rem;"><i class="fab fa-linkedin"></i></a>
-            <a href="mailto:drsuarez@yahoo.com" style="color:white; margin:0 10px; font-size: 1.5rem;"><i class="fas fa-envelope"></i></a>
+        <p class="tagline">DevOps Engineer • Full Stack Java Developer</p>
+        <div style="margin-top: 20px;">
+            <a href="https://www.linkedin.com/in/daniel-suarez-a2339a68/" style="color:white; margin:0 15px; font-size: 1.8rem;"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:drsuarez@yahoo.com" style="color:white; margin:0 15px; font-size: 1.8rem;"><i class="fas fa-envelope"></i></a>
         </div>
     </header>
 
-    <section id="about">
-        <h2>Professional Summary</h2>
-        <p>Over a decade of experience as a Full Stack Java Developer and 3 years specializing as a DevOps Engineer. I possess a deep understanding of banking application security and robustness, with expertise in CI/CD, cloud infrastructure management, and microservices architecture.</p>
-    </section>
-
-    <section id="skills">
-        <h2>Technical Core</h2>
-        <div class="skills-grid">
-            <div class="skill-tag">Azure & Terraform</div>
-            <div class="skill-tag">Kubernetes & Docker</div>
-            <div class="skill-tag">Java & Spring Boot</div>
-            <div class="skill-tag">Jenkins & GitHub Actions</div>
-            <div class="skill-tag">PostgreSQL & Kafka</div>
-            <div class="skill-tag">Flutter (Mobile)</div>
-            <div class="skill-tag">DevOps</div>
+    <section>
+        <div class="glass-card">
+            <h2><i class="fas fa-user-astronaut"></i> Professional Summary</h2>
+            <p>Over a decade of experience as a **Full Stack Java Developer** and 3 years specializing as a **DevOps Engineer**. Expert in building, deploying, and securing complex banking applications with a mastery of the CI/CD lifecycle.</p>
         </div>
     </section>
 
-    <section id="experience">
-        <h2>Work Experience</h2>
-        
-        <div class="timeline-item">
-            <span class="date">Jan 2023 - Present</span>
-            <div class="role">DevOps Engineer</div>
-            <span class="company">PruLife UK Advisors Recruitment Agency</span>
-            <p>Managing scalable cloud environments on Azure using Terraform, HPA, and automated CI/CD pipelines via GitHub Actions and Jenkins.</p>
-        </div>
-
-        <div class="timeline-item">
-            <span class="date">Aug 2022 - Jan 2023</span>
-            <div class="role">Programmer Analyst</div>
-            <span class="company">Robinsons Bank Corporation</span>
-            <p>Developed InstaPay and PESONet fund transfer systems and optimized backend reports for transaction monitoring and fraud detection.</p>
-        </div>
-
-        <div class="timeline-item">
-            <span class="date">Dec 2021 - July 2022</span>
-            <div class="role">Programmer Analyst</div>
-            <span class="company">Metropolitan Bank and Trust Company</span>
-            <p>Managed stack including Mulesoft, Spring Boot, and Kafka while leading design reviews for technology architecture.</p>
+    <section>
+        <div class="glass-card" style="border: 2px solid gold; background: rgba(255, 215, 0, 0.05);">
+            <h2><i class="fas fa-certificate" style="color: gold;"></i> Top Certification</h2>
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+                <div>
+                    <strong style="font-size: 1.2rem;">Microsoft Certified: Azure Fundamentals</strong><br>
+                    <span style="opacity: 0.8;">Issued March 2025 • ID: 5C6B531ECACB1B46</span>
+                </div>
+                <i class="fab fa-microsoft" style="font-size: 2.5rem; opacity: 0.5;"></i>
+            </div>
         </div>
     </section>
 
-    <section id="works">
-        <h2>Personal Projects</h2>
-        <div style="background: var(--glass); padding: 25px; border-radius: 12px; border: 1px solid var(--accent);">
-            <h3>Print Cost Calculator (Flutter)</h3>
-            <p>A specialized utility for the 3D printing industry. Features include material management, profit optimization logic, and secure In-App Purchase integration for premium features.</p>
-            <strong>Tech Stack:</strong> Flutter, Dart, SQLite, StoreKit.
+    <section>
+        <h2><i class="fas fa-code-branch"></i> Technical Arsenal</h2>
+        <div class="glass-card">
+            <div class="skills-grid">
+                <span class="skill-tag">Azure & Terraform</span>
+                <span class="skill-tag">Kubernetes (HPA)</span>
+                <span class="skill-tag">Docker</span>
+                <span class="skill-tag">Java & Spring Boot</span>
+                <span class="skill-tag">Jenkins & GitHub Actions</span>
+                <span class="skill-tag">Kafka & PostgreSQL</span>
+                <span class="skill-tag">SAST/DAST Security</span>
+                <span class="skill-tag">Flutter (Mobile)</span>
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects">
+        <h2><i class="fas fa-mobile-alt"></i> Mobile App Portfolio</h2>
+        <div class="glass-card project-highlight">
+            <div class="project-header">
+                <div class="app-icon">
+                    <i class="fas fa-cube"></i>
+                </div>
+                <div class="app-title">
+                    <h3>3D Print Cost Calculator</h3>
+                    <span class="platform-tag">iOS • Flutter</span>
+                </div>
+            </div>
+            
+            <p>A specialized utility application for the 3D printing industry. This app enables users to calculate total production costs by factoring in filament weight, power consumption, and machine depreciation.</p>
+            
+            <div class="feature-list">
+                <div class="feature-item"><i class="fas fa-check-circle"></i> **In-App Purchases:** Implemented secure StoreKit integration for premium feature unlocking.</div>
+                <div class="feature-item"><i class="fas fa-check-circle"></i> **Custom UI:** Designed high-performance animations and Cupertino-style dialogs.</div>
+                <div class="feature-item"><i class="fas fa-check-circle"></i> **State Management:** Handled complex asynchronous gaps and widget lifecycle states.</div>
+            </div>
+
+            <div class="skills-grid" style="margin-top: 15px;">
+                <span class="skill-tag">Dart</span>
+                <span class="skill-tag">Flutter</span>
+                <span class="skill-tag">App Store Connect</span>
+                <span class="skill-tag">IAP Integration</span>
+                <span class="skill-tag">Google Admob</span>
+            </div>
         </div>
     </section>
 
-    <section id="contact" style="text-align: center;">
-        <a href="mailto:drsuarez@yahoo.com" class="btn">Contact Me</a>
+    <section>
+        <h2><i class="fas fa-briefcase"></i> Experience Timeline</h2>
+        <div class="glass-card">
+            <div class="exp-item">
+                <span class="exp-date">Jan 2023 - Present</span>
+                <div class="exp-role">DevOps Engineer</div>
+                <span class="exp-company">PruLife UK (Gallium31) | Taguig City</span>
+                <p>Designing scalable cloud environments on Azure using Terraform and HPA. Automated CI/CD pipelines and integrated security scanning (SAST/DAST).</p>
+            </div>
+
+            <div class="exp-item">
+                <span class="exp-date">Aug 2022 - Jan 2023</span>
+                <div class="exp-role">Programmer Analyst</div>
+                <span class="exp-company">Robinsons Bank Corporation | Mandaluyong City</span>
+                <p>Engineered InstaPay/PESONet fund transfer systems and digital account enrollment modules.</p>
+            </div>
+
+            <div class="exp-item">
+                <span class="exp-date">Dec 2021 - July 2022</span>
+                <div class="exp-role">Programmer Analyst</div>
+                <span class="exp-company">Metrobank | Taguig City</span>
+                <p>Led system development and design reviews using Spring Boot, Kafka, and Azure.</p>
+            </div>
+
+            <div class="exp-item">
+                <span class="exp-date">April 2017 - Dec 2021</span>
+                <div class="exp-role">Programmer Analyst</div>
+                <span class="exp-company">BDO Unibank Inc. | Makati City</span>
+                <p>Developed high-performing Merchant Reimbursement systems and automated manual operational tasks.</p>
+            </div>
+        </div>
     </section>
 
-    <footer>
-        &copy; 2026 Daniel Suarez. Manila City, Philippines.
+    <footer style="text-align: center; margin-top: 40px; padding-bottom: 40px;">
+        <a href="mailto:drsuarez@yahoo.com" class="btn">Connect with Me</a>
+        <p style="margin-top: 30px; font-size: 0.8rem; opacity: 0.5;">&copy; 2026 Daniel Suarez • Manila City, Philippines</p>
     </footer>
 </div>
 
